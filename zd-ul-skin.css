@@ -1,14 +1,11 @@
-/* ZD Ultimate Legend using Front.jpg */
+body {
+    background: black !important;
+}
 
 #gamepad {
     background: url('https://raw.githubusercontent.com/ddread-gif/ZD-UL-CSS/main/Front%20.jpg') center/contain no-repeat !important;
     width: 900px !important;
-    height: 550px !important;
-    margin: 0 auto !important;
-}
-
-/* Hide default Xbox skin */
-.controller, .xbox, svg, .buttons, .sticks, .triggers {
-    display: none !important;
-    opacity: 0 !important;
+    height: 600px !important;
+    margin: 50px auto !important;
+    border: 2px solid red; /* temporary red border for testing */
 }
