@@ -1,45 +1,42 @@
-/* ZD Ultimate Legend - Uniform Blue Glow Skin */
+/* ZD Ultimate Legend - Force Custom Skin */
 
-body {
+body, html, #gamepad-wrapper, #gamepad {
     background: transparent !important;
 }
 
-/* Main Controller Body */
+/* Force our ZD Ultimate Legend image */
 #gamepad {
     background-image: url('https://raw.githubusercontent.com/ddread-gif/ZD-UL-CSS/main/15867527.jpg') !important;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 820px;
-    height: 520px;
-    margin: 0 auto;
-    position: relative;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    width: 850px !important;
+    height: 520px !important;
+    margin: 20px auto !important;
+    position: relative !important;
+    z-index: 1;
 }
 
-/* Uniform Blue Glow for pressed buttons */
-.button.pressed,
-.button.active {
-    filter: brightness(1.3) drop-shadow(0 0 15px #00ddff) !important;
-    transition: all 0.1s ease !important;
+/* Hide default Xbox controller elements */
+.svg-container, .controller, .xbox, .gamepad {
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
 
-/* Make sticks and triggers also glow */
-#left-stick.pressed,
-#right-stick.pressed,
-#left-trigger.pressed,
-#right-trigger.pressed {
-    filter: brightness(1.4) drop-shadow(0 0 20px #00ddff) !important;
+/* Blue glow on pressed buttons */
+.button.pressed, .button.active, .stick.pressed {
+    filter: brightness(1.6) drop-shadow(0 0 25px #00eeff) !important;
 }
 
-/* Optional: Slight overall controller glow */
-#gamepad::after {
-    content: '';
+/* Extra glow layer */
+#gamepad::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(0, 221, 255, 0.15) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(0, 238, 255, 0.25) 0%, transparent 60%);
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
 }
