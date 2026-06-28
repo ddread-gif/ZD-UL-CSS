@@ -1,42 +1,12 @@
-/* ZD Ultimate Legend - Force Custom Skin */
-
-body, html, #gamepad-wrapper, #gamepad {
-    background: transparent !important;
-}
-
-/* Force our ZD Ultimate Legend image */
+/* Minimal ZD UL Test */
 #gamepad {
-    background-image: url('https://raw.githubusercontent.com/ddread-gif/ZD-UL-CSS/main/15867527.jpg') !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    width: 850px !important;
-    height: 520px !important;
-    margin: 20px auto !important;
-    position: relative !important;
-    z-index: 1;
+    background: url('https://raw.githubusercontent.com/ddread-gif/ZD-UL-CSS/main/15867527.jpg') center/contain no-repeat !important;
+    width: 900px !important;
+    height: 550px !important;
+    margin: 0 auto !important;
 }
 
-/* Hide default Xbox controller elements */
-.svg-container, .controller, .xbox, .gamepad {
-    opacity: 0 !important;
-    visibility: hidden !important;
-}
-
-/* Blue glow on pressed buttons */
-.button.pressed, .button.active, .stick.pressed {
-    filter: brightness(1.6) drop-shadow(0 0 25px #00eeff) !important;
-}
-
-/* Extra glow layer */
-#gamepad::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(ellipse at center, rgba(0, 238, 255, 0.25) 0%, transparent 60%);
-    pointer-events: none;
-    z-index: 2;
+/* Hide default controller */
+.controller, .xbox, svg, .button, .stick, .trigger {
+    display: none !important;
 }
