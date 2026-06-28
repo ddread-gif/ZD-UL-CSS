@@ -1,12 +1,14 @@
-/* Minimal ZD UL Test */
+/* ZD Ultimate Legend using Front.jpg */
+
 #gamepad {
-    background: url('https://raw.githubusercontent.com/ddread-gif/ZD-UL-CSS/main/15867527.jpg') center/contain no-repeat !important;
+    background: url('https://raw.githubusercontent.com/ddread-gif/ZD-UL-CSS/main/Front%20.jpg') center/contain no-repeat !important;
     width: 900px !important;
     height: 550px !important;
     margin: 0 auto !important;
 }
 
-/* Hide default controller */
-.controller, .xbox, svg, .button, .stick, .trigger {
+/* Hide default Xbox skin */
+.controller, .xbox, svg, .buttons, .sticks, .triggers {
     display: none !important;
+    opacity: 0 !important;
 }
