@@ -1,0 +1,16 @@
+/* ZD Ultimate Legend Custom Skin for Gamepad Viewer */
+body {
+    background: transparent !important;
+}
+
+#gamepad {
+    background-image: url('https://raw.githubusercontent.com/ddread-gif/ZD-UL-CSS/main/15867527.jpg') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/* You can add more specific button styling here later */
